@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +11,33 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <header></header>
+    <h1>Rock, Paper, Scissors!</h1>
+
+    <div id="prompt">Make your move:</div>
+
+    <div id="buttonContainer">
+        <button id="Rock" class="move">
+            Rock
+        </button>
+        <button id="Paper" class="move">
+            <img src="paper.png" alt="rock">
+        </button>
+        <button id="Scissors" class="move">
+            <img src="scissors.png" alt="rock">
+        </button>
+    </div>
+
+    <div id="winOrLose"></div>
+
+    <div id="results"></div>
+
+    <button id="restart">New Game</button>
     <script src="script.js"></script>
+
+    <!--
+    <footer>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>-->
 </body>
 </html>

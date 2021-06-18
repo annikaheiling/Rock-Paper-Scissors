@@ -1,0 +1,44 @@
+body {
+    background-color: #e8ebf7;
+    font-family: 'Concert One', cursive;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #2e5266; 
+}
+div {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    border-radius: 25%;
+    background-color: ;
+}
+#prompt {
+
+}
+#buttonContainer {
+    display: flex;
+    justify-content: space-around;
+}
+.move {
+    max-width: 10em;
+    max-height: 10em;
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+} /*AAH WHY HANDS SO BIG AND DON'T STAY IN THEIR 10EM BUTTONS???*/
+#Rock {
+    background-image: url(rock.png);
+    background-size: 100%;
+} /*AAAH WHY SO MANY VERTICAL FISTS*/
+#winOrLose {
+
+}
+#results {
+
+}
+#restart {
+
+}
