@@ -20,11 +20,9 @@ function gameChecker(state) {
         if (playerWins > computerWins) {
             winOrLose.textContent = "You've won the game!";
             logContainer.textContent = ('Click the "New Game" button to play again.');
-            return true;
         } else {
             winOrLose.textContent = "You lost the game.";
-            logContainer.textContent = ('Click the "New Game" button to play again.'); //also make DOM
-            return false; //do it rly even need to return?
+            logContainer.textContent = ('Click the "New Game" button to play again.');
         } 
     } else {
         if (state === 1) {
@@ -37,16 +35,14 @@ function gameChecker(state) {
     }
 }
 const logContainer = document.querySelector('#results');
-const loggedMove = document.createElement('div'); 
-//loggedMove.classList.add() ///needed or nah?
+const loggedMove = document.createElement('div');
 function playRound(playerSelection, computerSelection) {
-    //INPUT SANITIZATION: move this once input func is created?
-    let player=capitalize(playerSelection); ///ISSUE: input button id here?
+    let player=capitalize(playerSelection);
     let comp=computerSelection;
     let win= "You Win! "+player+" beats "+comp; //could make win =1, tie =0, lose =-1 for simpler return
     let lose= "You lose. "+comp+" beats "+player; //&& worry about printing that stuff later on in game()
     let tie= "Tie. You both chose "+player;
-    loggedMove.textContent = `Player: ${player} \nComputer: ${comp}`;
+    loggedMove.textContent = `Last move was Player: ${player}, Computer: ${comp}`;
     logContainer.appendChild(loggedMove);
 
     if (player===comp) {
@@ -73,12 +69,9 @@ function capitalize(str) {  ///useless since user stopped being prompted?
 function newGame() {
     playerWins=0;
     computerWins=0;
-    //ADD: clear the log DOM
     logContainer.textContent = "";
     winOrLose.textContent = "";
 }
-
-//IDK where you're supposed to put this... so may have to move BUG
 document.getElementById("Rock").addEventListener("click", function() {
     playRound("Rock", computerPlay());
 });

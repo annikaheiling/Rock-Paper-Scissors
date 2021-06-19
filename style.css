@@ -11,12 +11,8 @@ div {
     display: flex;
     justify-content: space-around;
 }
-button {
-    border-radius: 25%;
-    background-color: ;
-}
 #prompt {
-
+    font-size: 1em;
 }
 #buttonContainer {
     display: flex;
@@ -28,17 +24,26 @@ button {
     background-color: transparent;
     border: none;
     background-size: cover;
-} /*AAH WHY HANDS SO BIG AND DON'T STAY IN THEIR 10EM BUTTONS???*/
-#Rock {
-    background-image: url(rock.png);
-    background-size: 100%;
-} /*AAAH WHY SO MANY VERTICAL FISTS*/
+    padding-top: 3em;
+}
+img {
+    max-height: 7em;
+}
 #winOrLose {
-
+    padding: 2em 1em 2em 1em;
+    text-align: center;
 }
 #results {
-
+    font-size: 1.2em;
 }
 #restart {
-
+    margin-top: 1.5em; 
+    border-radius: 70%;
+    padding: .75em .5em .75em .5em;
+    background-color: #f25f5c;
+    border: none;
+    font-size: 1.25em;
+    font-family: 'Concert One', cursive;
 }
+
+/*UNUSED color from palette: #e2c044*/
